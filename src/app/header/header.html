@@ -12,6 +12,6 @@
   </button>
 
   <button matButton>
-    <mat-icon aria-hidden="false" fontIcon="shopping_cart" />
+    <mat-icon [matBadgeHidden]="cartService.totalItems() === 0" [matBadge]="cartService.totalItems()" aria-hidden="false" fontIcon="shopping_cart" />
   </button>
 </mat-toolbar>
