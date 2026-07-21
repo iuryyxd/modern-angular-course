@@ -7,7 +7,7 @@
 
   <div class="products-grid">
     @for (product of filteredProducts(); track product.id) {
-      <app-product-card [product]="product" />
+      <app-product-card (addToCart)="onAddToCart($event)" [product]="product" />
     } @empty {
       <div class="empty-state">
         <mat-icon>inventory_2</mat-icon>

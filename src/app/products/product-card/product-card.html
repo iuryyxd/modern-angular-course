@@ -20,7 +20,7 @@
     <p>{{ product().description }}</p>
   </mat-card-content>
 
-  <mat-card-actions>
+  <mat-card-actions (click)="onAddToCart()">
     <button matButton>{{ addButtonLabel() }}</button>
   </mat-card-actions>
 </mat-card>
